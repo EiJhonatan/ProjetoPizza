@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+ .banner{
+    width: 100%;
+    height: 700px;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+ }
+
+ .barra-top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ .logo{
+   /* width: 200px; nao funciona no css */
+    padding-left: 70px;
+    padding-top: 35px;
+ }
+ .menu{
+   list-style: none;
+   display: flex;
+   padding-right: 120px;
+   padding-top: 70px;
+
+ }
+ 
+ .menu li{
+   margin: 10px;
+ }
+ .menu li a{
+   text-decoration: none;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 22px;
+   color: white;
+ }
+ .menu li a:hover{
+   color: brown;
+  
+   }
+ .pedir a{
+   border: 1px solid white;
+   border-radius: 25px;
+   padding: 10px;
+ }
+ .pedir a:hover{
+   background-color: brown;
+   color: white !important
+ }
+
+ .meio-banner{
+   width: 100%;
+   display: flex ;
+   justify-content: flex-end;
+  
+ }
+
+ .meio-banner h1{
+   color: white;
+   font-size: 60px;
+   text-align: end;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 800;
+   line-height: 1;
+ }
+ 
+ .meio_banner_direito{
+   padding-right: 120px;
+   padding-top: 80px;
+   
+ }
+ .botao-banner{
+  background-color: orange;
+  border:  1px solid black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+ }
+ 
+ .botao-banner a{
+   text-decoration: none;
+   color: brown;
+   font-size: 22px;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 22px;
+  
+ }
+
+.botao-banner:hover{
+transform: scale(1.1);
+transition: 1s;
+}
+ .botao-banner a:hover{
+  color: crimson;
+ }
+
+ /*INCIO QUEM SOMOS*/
+
+ .quem-somos{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ }
+
+ .quem-esquerda{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+ .quem-direito{
+  width: 50%;
+  display:flex ;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+ }
+
+ .quem-direito p{
+  text-align: right;
+  padding: 140px;
+  padding-top: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: rgb(98, 80, 80);
+ }
+
+ .quem-titulo{
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+  height: 50px;
+  margin-top: 100px;
+ }
+ .quem-titulo h1{
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+ }
+
+
+ /*AQUI COMEÇA MEU CARDÁPIO*/
+ .cardapio{
+  width: 100%;
+  background-color: rgb(233, 226, 226);
+  padding-bottom: 80px;
+ }
+ .cardapio-titulo{
+  display: flex;
+  align-items: center;
+  padding-top: 80px;
+  margin-left: 100px;
+  width: 300px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+ }
+ .cardapio-titulo h1{
+  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+ }
+ .cardapio-pizzas{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 40px;
+ }
+ .pizza-item{
+  width: 270px;
+  height: 280px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+ }
+ .pizza-item p{
+  width: 100%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color:rgb(127, 87, 35);
+ }
+.pizza-item a{
+  text-decoration: none;
+ background-color: peru;
+ color:rgb(127, 87, 35);
+ font-family: 'Montserrat', sans-serif;
+ font-size: 18px;
+ font-weight: 800;
+ border-radius: 15px;
+ padding: 10px 30px 0px 30px;
+
+}
+
+.pizza-item a:hover{
+  background-color:rgb(127, 87, 35);
+  color:peru;
+}
+
+.pizza-item:hover img {
+  transform: scale(0.9);
+  transition: 1s
+}
+
+.pizza-item img{
+  transition: 1s;
+}
+
+/*AQUI COMEÇA A SESSAO FAZER PEDIDO*/
+.fazer-pedido{
+  width: 100%;
+  background-color:crimson;
+  padding: 100px 50px 100px 100px;
+}
+
+.Titulo-pedido{
+  width: 100%;
+}
+
+.fazer-pedido h1{
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  border-bottom: 5px solid white;
+  width: 350px;
+}
+
+.formulario{
+  width: 100%;
+ margin-top: 50px;
+}
+.formulario form{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.formulario form label{
+  width: 100%;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+
+.formulario form label input{
+  width: 100%;
+  border-radius: 15px;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.sabores{
+  width: 100%;
+  border-radius: 15px;
+  width: 100%;
+  padding: 8px;
+  margin-top: 8px;
+  margin-bottom: 10px;
+  border: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.observacao textarea{
+  width: 100%;
+  border-radius: 15px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 3px 10px 3px 10px;
+}
+
+.enviar{
+  background-color: black;
+  width: 110px;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  margin-top: 40px;
+  cursor: pointer;
+}
+.enviar:hover{
+  background-color: brown;
+  color: peru;
+}
